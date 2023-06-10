@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: taxwizard-app-service
+  namespace: etsi-taxwizard-app
   labels:
-    app: nginx
+    app: taxwizard-app
 spec:
-  ports:
-  - name: http
-    port: 80
-    protocol: TCP
-    targetPort: 80
-  selector:
-    app: nginx
   type: LoadBalancer
+  selector:    
+    app: taxwizard-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
