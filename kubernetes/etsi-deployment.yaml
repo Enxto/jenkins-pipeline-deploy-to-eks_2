@@ -1,10 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: taxwizard-deployment
-  namespace: etsi-taxwizard-app
+  name: taxwizard-deployment  
   labels:
-    app: taxwizard-appcl
+    app: taxwizard-app
 spec:
   replicas: 3
   selector:

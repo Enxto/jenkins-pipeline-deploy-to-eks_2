@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: taxwizard-app-service
-  namespace: etsi-taxwizard-app
+  name: taxwizard-app-service 
   labels:
     app: taxwizard-app
 spec:
